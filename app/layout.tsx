@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MimAi",
-  description: "AI-powered learning tool.",
+  description: "MimAi. AI-powered learning tool.",
 };
 
 export default function RootLayout({
