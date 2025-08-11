@@ -9,7 +9,6 @@ import {
   Award,
   TrendingUp,
   Play,
-  Star,
   ArrowRight,
 } from "lucide-react";
 
@@ -40,19 +39,19 @@ export default function Component() {
                 href="#about"
                 className="text-gray-600 hover:text-primary transition-colors"
               >
-                About
+                Sobre nosotros
               </Link>
               <Link
-                href="#pricing"
+                href="#partners"
                 className="text-gray-600 hover:text-primary transition-colors"
               >
-                Pricing
+                Aliados
               </Link>
               <Link
                 href="#contact"
                 className="text-gray-600 hover:text-primary transition-colors"
               >
-                Contact
+                Contacto
               </Link>
             </div>
           </div>
@@ -66,33 +65,35 @@ export default function Component() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-primary/80 text-white font-bold border-primary/90">
-                  🚀 Revolutionizing Education
+                  🚀 Revolucionando la Educación
                 </Badge>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-                  Transform Learning with
-                  <span className="text-primary"> AI-Powered</span> Education
+                  Revoluciona la educación con
+                  <span className="text-primary"> el poder de la IA</span>
                 </h1>
                 <p className="text-lg text-[#B2B2B2] max-w-lg">
-                  Empower students and educators with cutting-edge technology
-                  that personalizes learning experiences and drives academic
-                  success.
+                  Impulsa el éxito académico de tu institución con tecnología de
+                  IA que personaliza el aprendizaje y ofrece experiencias
+                  divertidas, equitativas y a la medida para cada estudiante.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-primary hover:bg-[#82D0E0] text-white px-8"
-                >
-                  Start Free Trial
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <Link href={"https://forms.gle/yWiqrJuJf7ZoxqLS8"}>
+                  <Button
+                    size="lg"
+                    className="bg-primary hover:bg-[#82D0E0] text-white px-8"
+                  >
+                    Únete hoy
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-[#B2B2B2] text-black  hover:bg-[#E5E5E5]"
                 >
                   <Play className="mr-2 w-4 h-4" />
-                  Watch Demo
+                  Mira un demo
                 </Button>
               </div>
             </div>
@@ -106,7 +107,7 @@ export default function Component() {
                   className="rounded-lg shadow-lg"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-lg p-4 shadow-lg border border-[#E5E5E5]">
+              {/*               <div className="absolute -bottom-6 -left-6 bg-white rounded-lg p-4 shadow-lg border border-[#E5E5E5]">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                     <TrendingUp className="w-5 h-5 text-white" />
@@ -120,14 +121,14 @@ export default function Component() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white border-b border-[#E5E5E5]">
+      {/*       <section className="py-16 bg-white border-b border-[#E5E5E5]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -156,14 +157,14 @@ export default function Component() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
       <section id="features" className="py-20 bg-[#E5E5E5]/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-              Powerful Features for Modern Education
+              Features poderosas para la educación moderna.
             </h2>
             <p className="text-lg text-[#B2B2B2] max-w-2xl mx-auto">
               Our comprehensive platform provides everything you need to create
@@ -177,11 +178,11 @@ export default function Component() {
                   <BookOpen className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">
-                  Adaptive Learning
+                  Guía de IA personalizada
                 </h3>
                 <p className="text-[#B2B2B2]">
-                  AI-powered personalization that adapts to each student&apos;s
-                  learning pace and style.
+                  Una guía inteligente que adapta las lecciones al ritmo y
+                  estilo de aprendizaje de cada alumno.
                 </p>
               </CardContent>
             </Card>
@@ -191,11 +192,11 @@ export default function Component() {
                   <Users className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">
-                  Collaborative Tools
+                  Panel de control integtral
                 </h3>
                 <p className="text-[#B2B2B2]">
-                  Foster teamwork and communication with integrated
-                  collaboration features.
+                  Dashboard de desempeño para profesores, con indicadores por
+                  grupo y por estudiante en tiempo real.
                 </p>
               </CardContent>
             </Card>
@@ -205,11 +206,11 @@ export default function Component() {
                   <Award className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">
-                  Progress Tracking
+                  Contenidos a la medida
                 </h3>
                 <p className="text-[#B2B2B2]">
-                  Comprehensive analytics and reporting to monitor student
-                  progress and outcomes.
+                  Generación de ejercicios, lecturas y recursos didácticos
+                  personalizados.
                 </p>
               </CardContent>
             </Card>
@@ -219,11 +220,11 @@ export default function Component() {
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">
-                  Real-time Analytics
+                  Retos y gamificación
                 </h3>
                 <p className="text-[#B2B2B2]">
-                  Get instant insights into learning patterns and performance
-                  metrics.
+                  Actividades interactivas y desafíos que mantienen a los
+                  alumnos motivados y comprometidos.
                 </p>
               </CardContent>
             </Card>
@@ -233,11 +234,11 @@ export default function Component() {
                   <BookOpen className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">
-                  Content Library
+                  Alertas y propuestas
                 </h3>
                 <p className="text-[#B2B2B2]">
-                  Access thousands of curated educational resources and
-                  materials.
+                  Notificaciones sobre bajo rendimiento o desmotivación, junto
+                  con planes de acción recomendados.
                 </p>
               </CardContent>
             </Card>
@@ -247,11 +248,11 @@ export default function Component() {
                   <Users className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">
-                  Mobile Learning
+                  Reportes de impacto
                 </h3>
                 <p className="text-[#B2B2B2]">
-                  Learn anywhere, anytime with our fully responsive mobile
-                  platform.
+                  Informes detallados que muestran las mejoras en el aprendizaje
+                  y el progreso académico de la institución.
                 </p>
               </CardContent>
             </Card>
@@ -260,7 +261,7 @@ export default function Component() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-white">
+      {/*       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
@@ -355,40 +356,92 @@ export default function Component() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-[#82D0E0]">
+      <section
+        id="about"
+        className="py-20 bg-gradient-to-r from-primary to-[#82D0E0]"
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Transform Your Educational Experience?
+              Sobre nosotros
             </h2>
-            <p className="text-lg text-white/90 mb-8">
-              Join thousands of educators and students who are already
-              experiencing the future of learning.
+            <p className="text-lg text-white/90 font-bold mb-8">
+              En México, la proporción de más de 20 alumnos por profesor
+              dificulta la atención individual y retrasa la resolución de dudas,
+              lo que genera brechas de aprendizaje cada vez más profundas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-gray-100 px-8"
-              >
-                Start Your Free Trial
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary text-white bg-primary hover:bg-white hover:text-primary px-8"
-              >
-                Schedule a Demo
-              </Button>
+
+            <p className="text-lg text-white/90 mb-8 font-bold">
+              MimAI ofrece un guía de IA que, trabajando en conjunto con el
+              docente, ofrece apoyo inmediato y personalizado a cada estudiante.
+            </p>
+            <p className="text-lg text-white/90 mb-8 font-bold">
+              Al mismo tiempo, brindando a las y los docentes un panel de
+              seguimiento en tiempo real para identificar necesidades, planear
+              intervenciones y medir el progreso académico sin aumentar su carga
+              de trabajo. Garantizando una educación de calidad, inclusiva y
+              centrada en el desarrollo de cada alumno.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section
+        id="partners"
+        className="py-20 bg-white border-b border-[#E5E5E5]"
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+              Nuestros aliados
+            </h2>
+          </div>
+          <div className="flex flex-row justify-center gap-8 items-center">
+            <div className="flex justify-center">
+              <Image
+                src="/EssexLogo.png"
+                alt="Universidad de Essex"
+                width={250}
+                height={100}
+                className="object-contain"
+              />
             </div>
           </div>
         </div>
       </section>
 
+      <section className="pt-20 pb-16 bg-gradient-to-br px-4 from-[#E5E5E5] to-white items-center flex flex-col w-full gap-6">
+        <p className="text-center font-semibold text-xl ">
+          Únete a las instituciones y docentes innovadores que ya confían en
+          MimAI y transforma la educación en México.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link href={"https://forms.gle/yWiqrJuJf7ZoxqLS8"}>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-[#82D0E0] text-white px-8"
+            >
+              Únete hoy
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </Link>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-[#B2B2B2] text-black  hover:bg-[#E5E5E5]"
+          >
+            <Play className="mr-2 w-4 h-4" />
+            Mira un demo
+          </Button>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="bg-black text-white py-12">
+      <footer id="contact" className="bg-black text-white py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between gap-4">
             <div className="flex flex-col">
@@ -402,12 +455,20 @@ export default function Component() {
                 />
               </div>
               <p className="text-[#B2B2B2]">
-                Empowering education through innovative technology solutions.
+                Empoderando la eduación a través de soluciones tecnológicas
+                innovativas.
               </p>
+              <Link
+                href={"https://forms.gle/yWiqrJuJf7ZoxqLS8"}
+                className="text-[#B2B2B2] underline hover:font-bold"
+              >
+                Tienes alguna duda o comentario, no dudes en contactarnos.
+              </Link>
             </div>
+
             <div className="flex flex-col md:flex-row gap-8">
               <div className="flex flex-col gap-4">
-                <h3 className="font-semibold mb-4">Product</h3>
+                <h3 className="font-semibold mb-4">Producto</h3>
                 <ul className="space-y-2 text-[#B2B2B2]">
                   <li>
                     <Link
@@ -422,7 +483,7 @@ export default function Component() {
                       href="#"
                       className="hover:text-primary transition-colors"
                     >
-                      Pricing
+                      Sobre nosotros
                     </Link>
                   </li>
                   <li>
@@ -430,20 +491,21 @@ export default function Component() {
                       href="#"
                       className="hover:text-primary transition-colors"
                     >
-                      Integrations
+                      Aliados
                     </Link>
                   </li>
                 </ul>
               </div>
+
               <div className="flex flex-col gap-4">
-                <h3 className="font-semibold mb-4">Company</h3>
+                <h3 className="font-semibold mb-4">Compañía</h3>
                 <ul className="space-y-2 text-[#B2B2B2]">
                   <li>
                     <Link
-                      href="#"
+                      href="#about"
                       className="hover:text-primary transition-colors"
                     >
-                      About
+                      Sobre nosotros
                     </Link>
                   </li>
                   <li>
@@ -459,7 +521,7 @@ export default function Component() {
                       href="#"
                       className="hover:text-primary transition-colors"
                     >
-                      Contact
+                      Contacto
                     </Link>
                   </li>
                 </ul>
@@ -467,7 +529,7 @@ export default function Component() {
             </div>
           </div>
           <div className="border-t border-[#B2B2B2]/20 mt-8 pt-8 text-center text-[#B2B2B2]">
-            <p>&copy; 2024 MimAi. All rights reserved.</p>
+            <p>&copy; 2025 MimAi. All rights reserved.</p>
           </div>
         </div>
       </footer>
